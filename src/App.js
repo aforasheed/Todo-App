@@ -9,10 +9,10 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [status, setStatus] = useState("all");
   const [filteredTodos, setFilteredTodos] = useState([]);
-  // RUN ONCE 
-  useEffect(()=>{
-    getLocalTodos()
-  }, [])
+  // RUN ONCE
+  useEffect(() => {
+    getLocalTodos();
+  }, []);
   // USE EFFECT
   useEffect(() => {
     filterHandler();
